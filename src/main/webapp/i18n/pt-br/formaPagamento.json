@@ -1,0 +1,25 @@
+{
+    "financeiroApp": {
+        "formaPagamento": {
+            "home": {
+                "title": "Forma Pagamentos",
+                "createLabel": "Criar novo Forma Pagamento",
+                "createOrEditLabel": "Criar ou editar Forma Pagamento",
+                "search": "Pesquisar por Forma Pagamento"
+            },
+            "created": "Um novo Forma Pagamento foi criado com o identificador {{ param }}",
+            "updated": "Um Forma Pagamento foi atualizado com o identificador {{ param }}",
+            "deleted": "Um Forma Pagamento foi deletado com o identificador {{ param }}",
+            "delete": {
+                "question": "Tem certeza de que deseja excluir Forma Pagamento {{ id }}?"
+            },
+            "detail": {
+                "title": "Forma Pagamento"
+            },
+            "moeda": "Moeda",
+            "descricao": "Descricao",
+            "observacao": "Observacao",
+            "parcela": "Parcela"
+        }
+    }
+}

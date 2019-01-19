@@ -1,0 +1,9 @@
+{
+    "financeiroApp": {
+        "TipoPagamento": {
+            "null": "",
+            "AVISTA": "AVISTA",
+            "PARCELADO": "PARCELADO"
+        }
+    }
+}

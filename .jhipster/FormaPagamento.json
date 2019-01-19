@@ -1,0 +1,38 @@
+{
+    "name": "FormaPagamento",
+    "fields": [
+        {
+            "fieldName": "moeda",
+            "fieldType": "Moeda",
+            "fieldValues": "DINHEIRO,CARTAO"
+        },
+        {
+            "fieldName": "descricao",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "observacao",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "parcela",
+            "otherEntityName": "parcela",
+            "otherEntityRelationshipName": "formaPagamento"
+        }
+    ],
+    "changelogDate": "20190119214748",
+    "entityTableName": "forma_pagamento",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

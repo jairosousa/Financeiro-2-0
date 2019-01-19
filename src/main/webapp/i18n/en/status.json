@@ -1,0 +1,10 @@
+{
+    "financeiroApp": {
+        "Status": {
+            "null": "",
+            "PAGO": "PAGO",
+            "PENDENTE": "PENDENTE",
+            "CANCELADO": "CANCELADO"
+        }
+    }
+}

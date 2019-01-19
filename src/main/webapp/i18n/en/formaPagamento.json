@@ -1,0 +1,25 @@
+{
+    "financeiroApp": {
+        "formaPagamento": {
+            "home": {
+                "title": "Forma Pagamentos",
+                "createLabel": "Create a new Forma Pagamento",
+                "createOrEditLabel": "Create or edit a Forma Pagamento",
+                "search": "Search for Forma Pagamento"
+            },
+            "created": "A new Forma Pagamento is created with identifier {{ param }}",
+            "updated": "A Forma Pagamento is updated with identifier {{ param }}",
+            "deleted": "A Forma Pagamento is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Forma Pagamento {{ id }}?"
+            },
+            "detail": {
+                "title": "Forma Pagamento"
+            },
+            "moeda": "Moeda",
+            "descricao": "Descricao",
+            "observacao": "Observacao",
+            "parcela": "Parcela"
+        }
+    }
+}

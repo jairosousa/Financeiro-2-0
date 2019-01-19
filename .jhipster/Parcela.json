@@ -1,0 +1,61 @@
+{
+    "name": "Parcela",
+    "fields": [
+        {
+            "fieldName": "dataVencimento",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dataPagamento",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "numero",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "valor",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "juros",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "total",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "Status",
+            "fieldValues": "PAGO,PENDENTE,CANCELADO"
+        },
+        {
+            "fieldName": "observacao",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "lancamento",
+            "otherEntityName": "lancamento",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "formaPagamento",
+            "otherEntityName": "formaPagamento",
+            "otherEntityField": "moeda"
+        }
+    ],
+    "changelogDate": "20190119214747",
+    "entityTableName": "parcela",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

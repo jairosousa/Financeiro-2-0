@@ -1,0 +1,9 @@
+{
+    "financeiroApp": {
+        "Moeda": {
+            "null": "",
+            "DINHEIRO": "DINHEIRO",
+            "CARTAO": "CARTAO"
+        }
+    }
+}
