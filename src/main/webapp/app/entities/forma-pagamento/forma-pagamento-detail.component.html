@@ -1,0 +1,35 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="formaPagamento">
+            <h2><span jhiTranslate="financeiroApp.formaPagamento.detail.title">Forma Pagamento</span> {{formaPagamento.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="financeiroApp.formaPagamento.moeda">Moeda</span></dt>
+                <dd>
+                    <span jhiTranslate="{{'financeiroApp.Moeda.' + formaPagamento.moeda}}">{{formaPagamento.moeda}}</span>
+                </dd>
+                <dt><span jhiTranslate="financeiroApp.formaPagamento.descricao">Descricao</span></dt>
+                <dd>
+                    <span>{{formaPagamento.descricao}}</span>
+                </dd>
+                <dt><span jhiTranslate="financeiroApp.formaPagamento.observacao">Observacao</span></dt>
+                <dd>
+                    <span>{{formaPagamento.observacao}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/forma-pagamento', formaPagamento.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

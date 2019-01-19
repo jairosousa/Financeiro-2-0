@@ -1,0 +1,61 @@
+{
+    "name": "Fornecedor",
+    "fields": [
+        {
+            "fieldName": "nome",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "minlength"
+            ],
+            "fieldValidateRulesMinlength": 3
+        },
+        {
+            "fieldName": "razaoSocial",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "telefoneFixo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "telefoneCel",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pessoa",
+            "fieldType": "Pessoa",
+            "fieldValues": "FISICA,JURIDICA",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "cnpj",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cpf",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "endereco",
+            "otherEntityName": "endereco",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "fornecedor"
+        }
+    ],
+    "changelogDate": "20190119214744",
+    "entityTableName": "fornecedor",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

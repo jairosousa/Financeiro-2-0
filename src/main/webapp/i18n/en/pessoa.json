@@ -1,0 +1,9 @@
+{
+    "financeiroApp": {
+        "Pessoa": {
+            "null": "",
+            "FISICA": "FISICA",
+            "JURIDICA": "JURIDICA"
+        }
+    }
+}
