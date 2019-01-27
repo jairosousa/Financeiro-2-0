@@ -5,6 +5,16 @@
 Navbar
 ========================================================================== */
 
+nav {
+    //border-bottom: solid 1px red;
+    background: #fff;
+}
+
+.shadows {
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+}
 .navbar-version {
     font-size: 0.65em;
     color: $navbar-dark-color;
@@ -44,10 +54,10 @@ Navbar
 Logo styles
 ========================================================================== */
 .logo-img {
-    height: 45px;
-    width: 45px;
+    height: 70px;
+    width: 200px;
     display: inline-block;
     vertical-align: middle;
-    background: url('../../../content/images/logo-jhipster.png') no-repeat center center;
+    background: url('../../../content/images/banner-logo-200x70.png') no-repeat center center;
     background-size: contain;
 }

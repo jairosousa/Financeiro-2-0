@@ -44,10 +44,10 @@ public class Fornecedor implements Serializable {
     @Column(name = "pessoa", nullable = false)
     private Pessoa pessoa;
 
-    @Column(name = "cnpj")
+    @Column(name = "cnpj", unique = true)
     private String cnpj;
 
-    @Column(name = "cpf")
+    @Column(name = "cpf", unique = true)
     private String cpf;
 
     @OneToOne    @JoinColumn(unique = true)

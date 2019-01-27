@@ -42,11 +42,11 @@
             </column>
 
             <column name="cnpj" type="varchar(255)">
-                <constraints nullable="true" />
+                <constraints nullable="true" uniqueConstraintName="uc_fornecedorcnpj_col"/>
             </column>
 
             <column name="cpf" type="varchar(255)">
-                <constraints nullable="true" />
+                <constraints nullable="true" uniqueConstraintName="uc_fornecedocpf_col" />
             </column>
             <column name="endereco_id" type="bigint">
                 <constraints unique="true" nullable="true" uniqueConstraintName="ux_fornecedor_endereco_id" />

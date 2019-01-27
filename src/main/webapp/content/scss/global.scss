@@ -9,7 +9,12 @@ h1,
 h2,
 h3,
 h4 {
-    font-weight: 300;
+    //font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.layout-min {
+    min-height: 70vh;
 }
 
 a {
@@ -29,8 +34,8 @@ Browser Upgrade Prompt
 ========================================================================== */
 .browserupgrade {
     margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
+    //background: #ccc;
+    //color: #000;
     padding: 0.2em 0;
 }
 

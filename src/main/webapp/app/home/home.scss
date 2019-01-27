@@ -1,23 +1,158 @@
-/* ==========================================================================
-Main page styles
-========================================================================== */
+/*--------------------*\
+  CHAMADA
+\*--------------------*/
 
-.hipster {
-    display: inline-block;
-    width: 347px;
-    height: 497px;
-    background: url('../../content/images/jhipster_family_member_0.svg') no-repeat center top;
-    background-size: contain;
+.layout-chamada {
+    padding: 80px 0;
+    //margin-top: 60px;
+
+    //background-color: #7ab55c;
+    background: url('../../content/images/banner-inicial_v.jpg') no-repeat center center;
 }
 
-/* wait autoprefixer update to allow simple generation of high pixel density media query */
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-    only screen and (-moz-min-device-pixel-ratio: 2),
-    only screen and (-o-min-device-pixel-ratio: 2/1),
-    only screen and (min-resolution: 192dpi),
-    only screen and (min-resolution: 2dppx) {
-    .hipster {
-        background: url('../../content/images/jhipster_family_member_0.svg') no-repeat center top;
-        background-size: contain;
+.chamada {
+    font-size: 1.6rem; /* 1.6 * 10px = 16px */
+    text-align: center;
+}
+
+.chamada__titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+
+    color: #fff;
+
+    font-size: 1.925em; /* 54px / 16px = 3.375 */
+    line-height: 0.9;
+    text-shadow: 1px 1px #313131;
+}
+
+.chamada__subtitulo {
+    margin: 60px 0;
+
+    color: #fff;
+
+    font-size: 0.8em;
+}
+
+.chamada__acao {
+    font-size: 1em;
+}
+
+@media (min-width: 1922px) {
+    .layout-chamada {
+        background: url('../../content/images/banner-inicial.jpg') no-repeat center center;
     }
+}
+
+@media (min-width: 992px) {
+    .chamada {
+        padding-left: 10%;
+        padding-right: 10%;
+
+        font-size: 2.2rem; /* 2.2 * 10px = 22px */
+    }
+}
+
+/*--------------------*\
+  DEPOIMENTO
+\*--------------------*/
+
+.layout-depoimento {
+    padding: 80px 0;
+    background-color: #e7e7e7;
+}
+.depoimento {
+    font-size: 2.2rem; /* 22px */
+}
+
+@media (min-width: 992px) {
+    .depoimento {
+        padding-left: 15%;
+        padding-right: 15%;
+
+        font-size: 2.8rem;
+    }
+}
+
+.depoimento > blockquote {
+    position: relative;
+
+    margin: 0;
+    padding: 0 60px;
+
+    text-align: center;
+    font-size: 0.46em;
+}
+
+.depoimento > blockquote::before {
+    position: absolute;
+    left: 0;
+    top: -0.35em;
+
+    color: #ccc;
+
+    font-size: 8em; /* 176px */
+
+    content: '\201C';
+}
+
+.depoimento__autor {
+    margin-top: 40px;
+
+    text-align: center;
+    font-size: 0.472em;
+}
+
+.depoimento__autor > img {
+    border-radius: 50%;
+}
+
+.depoimento__autor > p {
+    margin-top: 10px;
+}
+
+/*--------------------*\
+  BOTAO
+\*--------------------*/
+.botao {
+    display: inline-block;
+    padding: 0.8em 1.2em;
+
+    background-color: #bbb;
+    color: #fff;
+
+    line-height: normal;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.botao:hover,
+.botao:focus {
+    background-color: #aaa;
+    color: #fff;
+
+    text-decoration: none;
+}
+
+.botao--assinar,
+.botao--login {
+    background-color: #127d00;
+}
+
+.botao--assinar:hover,
+.botao--assinar:focus,
+.botao--login:hover,
+.botao--login:focus {
+    background-color: #0e6400;
+}
+
+.botao--principal {
+    border-radius: 10px;
+
+    background-color: #004b86;
+}
+
+.botao--principal:hover,
+.botao--principal:focus {
+    background-color: #003b6a;
 }
