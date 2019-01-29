@@ -2,24 +2,24 @@
     "financeiroApp": {
         "fornecedor": {
             "home": {
-                "title": "Fornecedors",
-                "createLabel": "Criar novo Fornecedor",
+                "title": "Fornecedores",
+                "createLabel": "Fornecedor",
                 "createOrEditLabel": "Criar ou editar Fornecedor",
-                "search": "Pesquisar por Fornecedor"
+                "search": "Pesquisar Fornecedor"
             },
-            "created": "Um novo Fornecedor foi criado com o identificador {{ param }}",
-            "updated": "Um Fornecedor foi atualizado com o identificador {{ param }}",
-            "deleted": "Um Fornecedor foi deletado com o identificador {{ param }}",
+            "created": "O novo Fornecedor: {{ param }} foi criado com sucesso! ",
+            "updated": "O Fornecedor: {{ param }} foi atualizado com sucesso",
+            "deleted": "0 Fornecedor foi deletado com sucesso",
             "delete": {
-                "question": "Tem certeza de que deseja excluir Fornecedor {{ id }}?"
+                "question": "Tem certeza de que deseja excluir Fornecedor: {{ nome }}?"
             },
             "detail": {
                 "title": "Fornecedor"
             },
             "nome": "Nome",
             "razaoSocial": "Razao Social",
-            "telefoneFixo": "Telefone Fixo",
-            "telefoneCel": "Telefone Cel",
+            "telefoneFixo": "Fixo",
+            "telefoneCel": "Celular",
             "pessoa": "Pessoa",
             "cnpj": "Cnpj",
             "cpf": "Cpf",

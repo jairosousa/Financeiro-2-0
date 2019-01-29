@@ -1,7 +1,8 @@
 import './vendor.ts';
 
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+// import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgbDatepickerConfig } from '@ng-bootstrap/ng-bootstrap';
 import { Ng2Webstorage } from 'ngx-webstorage';
@@ -23,7 +24,7 @@ import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent
 
 @NgModule({
     imports: [
-        BrowserModule,
+        BrowserAnimationsModule,
         FinanceiroAppRoutingModule,
         Ng2Webstorage.forRoot({ prefix: 'jhi', separator: '-' }),
         NgJhipsterModule.forRoot({

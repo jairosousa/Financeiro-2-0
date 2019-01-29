@@ -55,9 +55,15 @@ Logo styles
 ========================================================================== */
 .logo-img {
     height: 70px;
-    width: 500px;
+    width: 300px;
     display: inline-block;
     vertical-align: middle;
     background: url('../../../content/images/banner.png') no-repeat center center;
     background-size: contain;
+}
+
+@media screen and (min-width: 385px) {
+    .logo-img {
+        width: 200px;
+    }
 }

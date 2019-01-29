@@ -2,6 +2,8 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { FinanceiroSharedModule } from 'app/shared';
+import { RadioButtonModule } from 'primeng/radiobutton';
+
 import {
     FornecedorComponent,
     FornecedorDetailComponent,
@@ -15,7 +17,7 @@ import {
 const ENTITY_STATES = [...fornecedorRoute, ...fornecedorPopupRoute];
 
 @NgModule({
-    imports: [FinanceiroSharedModule, RouterModule.forChild(ENTITY_STATES)],
+    imports: [FinanceiroSharedModule, RouterModule.forChild(ENTITY_STATES), RadioButtonModule],
     declarations: [
         FornecedorComponent,
         FornecedorDetailComponent,

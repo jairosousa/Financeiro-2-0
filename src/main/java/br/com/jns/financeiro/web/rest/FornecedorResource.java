@@ -59,7 +59,7 @@ public class FornecedorResource {
         }
         FornecedorDTO result = fornecedorService.save(fornecedorDTO);
         return ResponseEntity.created(new URI("/api/fornecedors/" + result.getId()))
-            .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, result.getId().toString()))
+            .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, result.getNome()))
             .body(result);
     }
 

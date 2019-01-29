@@ -29,6 +29,13 @@
     "@angular-devkit/core" "7.0.6"
     rxjs "6.3.3"
 
+"@angular/animations@^7.2.2":
+  version "7.2.2"
+  resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-7.2.2.tgz#a81e4fa60de2e33ec462b43af122a66926df72fb"
+  integrity sha512-St03YR3N4Rv0vLr0+3V0kmf/QNi9q0tOenAlHP+jG/YySPkkv8P3xRcGVU38ID4JQzRiShUD+k2r+oZGCQMNjw==
+  dependencies:
+    tslib "^1.9.0"
+
 "@angular/cli@7.0.6":
   version "7.0.6"
   resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-7.0.6.tgz#f97bc9ca92785c7ce2e5f20819c48265a1da5b53"
@@ -7947,6 +7954,16 @@ pretty-format@^23.6.0:
   dependencies:
     ansi-regex "^3.0.0"
     ansi-styles "^3.2.0"
+
+primeicons@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/primeicons/-/primeicons-1.0.0.tgz#90061f168ef6227f21f0a7db8204ffa85cd27aec"
+  integrity sha512-p/hzIjUVccW4eJPhuORHI3AUkDpqfvCQVrjxbFEejnTEdWY4C8fomVfjiaA9jCu83fSQnBHuRIGB96iAR8R6uA==
+
+primeng@^7.0.5:
+  version "7.0.5"
+  resolved "https://registry.yarnpkg.com/primeng/-/primeng-7.0.5.tgz#9a2e5921a7dcdd0052e99e11f7d23ea1953d155b"
+  integrity sha512-CVc6XxMZEsuCKXkyLUI/bRKX+spSBnEwqOFnAeXfSjIq0Uok51Dnrn8yNHyAWU2YRx93h7NWgxBtSXWVddEwqg==
 
 private@^0.1.6, private@^0.1.8, private@~0.1.5:
   version "0.1.8"
